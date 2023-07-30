@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ashep/ujds/internal/apperrors"
+	"github.com/ashep/go-apperrors"
 )
 
 //nolint:dupl // false positive
