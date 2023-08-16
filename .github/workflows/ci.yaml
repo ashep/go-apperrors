@@ -1,0 +1,5 @@
+name: ci
+on: push
+jobs:
+  build:
+    uses: ashep/ci/.github/workflows/go-lib.yaml@v1

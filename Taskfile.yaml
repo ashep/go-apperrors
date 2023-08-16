@@ -1,0 +1,16 @@
+version: '3'
+
+includes:
+  lint:
+    taskfile: .ci/Taskfile.lint.yaml
+    optional: true
+  test:
+    taskfile: .ci/Taskfile.test.yaml
+    optional: true
+
+tasks:
+  init:
+    desc: Initialize environment
+    cmds:
+      - rm -rf .ci
+      - git clone --branch v1 https://github.com/ashep/ci.git .ci

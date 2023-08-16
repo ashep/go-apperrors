@@ -22,14 +22,6 @@ func (e AccessDeniedError) Error() string {
 	return "access denied"
 }
 
-type EmptyArgError struct {
-	Subj string
-}
-
-func (e EmptyArgError) Error() string {
-	return e.Subj + " is empty"
-}
-
 type InvalidArgError struct {
 	Subj   string
 	Reason string
